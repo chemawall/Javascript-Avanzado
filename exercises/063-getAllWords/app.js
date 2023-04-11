@@ -1,13 +1,14 @@
 function getAllWords(str) {
     // your code here
-    let array = []
-    for (i=0; i < str.length; i++){
-        array.push(str.charAt(i))  
+    c=str.split(' ').length
+    separado = str.split(" ", c)
+    return separado
+    
         
     
 }
 
-}
+//recuerda al usar split que el primer elemento es el criterio por el que va a separar, el segundo el número de separaciones
     
 let output = getAllWords('Radagast the Brown');
 console.log(output);
